@@ -90,6 +90,7 @@ const checkWinner = () => {
         if (pos1Val === pos2Val && pos2Val === pos3Val) {
             console.log("winner", pos1Val);
             showWinner(pos1Val);
+            gameDraw();
             return true;
         }   
      }
