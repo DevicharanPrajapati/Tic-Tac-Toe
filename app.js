@@ -50,6 +50,7 @@ boxes.forEach((box) => {
 const gameDraw = () => {
     msg.innerText = `Game was a Draw.`;
     msgContainer.classList.remove("hide");
+    consol.log(msg);
     disableBoxes();
 };
 
@@ -90,7 +91,7 @@ const checkWinner = () => {
         if (pos1Val === pos2Val && pos2Val === pos3Val) {
             console.log("winner", pos1Val);
             showWinner(pos1Val);
-            gameDraw();
+          
             return true;
         }   
      }
